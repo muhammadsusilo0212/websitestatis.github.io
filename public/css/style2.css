@@ -1,0 +1,50 @@
+/* Modern table styling */
+    .profile-table {
+      width: 100%;
+      border-collapse: separate !important;
+      border-spacing: 0 12px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .profile-table th,
+    .profile-table td {
+      padding: 12px 20px;
+      vertical-align: middle;
+    }
+
+    /* Styling for first column cells */
+    .profile-table td:first-child {
+      font-weight: 600;
+      background-color: #f0f4f8;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      width: 25%;
+      color: #0d6efd; /* Bootstrap primary blue */
+    }
+
+    /* Styling for second column cells */
+    .profile-table td:last-child {
+      background-color: #ffffff;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      width: 75%;
+    }
+
+    /* List style for media sosial */
+    .profile-table ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .profile-table td:first-child {
+        font-size: 0.9rem;
+      }
+      .profile-table td:last-child {
+        font-size: 0.9rem;
+      }
+    }
